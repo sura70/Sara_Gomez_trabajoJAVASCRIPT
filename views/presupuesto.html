@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta datos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="juegos, juegos de mesa, ">
+  <link rel="canonical" href="htpps://www.homoludicus-huelva.com">
+  <meta name="robots" content="index,follow">
+  <!-- titulo -->
+  <title>Página dedicada a juegos de mesa</title>
+  <!-- favicon -->
+   <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  <!--  CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <!-- barra de navegacion -->
+  <nav id="fix" class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Logo, nombre y enlaces de la nav -->
+      <div   class="collapse navbar-collapse"  id="navbar-toggler">
+        <a class="navbar-brand" href="../index.html"><img id="foto" src="../favicon.png"  alt="logo"></a>
+        <span class="nombre">Suerte Dada</span>
+        <i class="bi bi-dice-1-fill"></i>
+        <i class="bi bi-dice-6"></i>
+       
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/galeria.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Pedidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../views/contacto.html">Contacto</a>
+          </li>
+        </ul>
+         <!-- login y carrito de compra -->
+         <a href="#"><p class=" login bi bi-person-fill"></p></a>
+        
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid envios">Envíos a domicilo gratis a partir de los 50€</div>
+
+  
+
+    <!-- Section1 -->
+<section>
+  
+       <!-- Formulario -->
+      <form class="row mt-5" id="formulario">
+        <div class="col-lg-6" >
+          <h2>Datos Personales</h2>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre">
+              <div class="error" id="nombreError"></div>
+            </div>
+            <div class="form-group">
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" id="apellidos" name="apellidos">
+              <div class="error" id="apellidosError"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Eléctronico:</label>
+              <input type="email" id="email" name="email">
+              <div class="error" id="emailError"></div>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono">
+              <div class="error" id="telefonoError"></div>
+            </div>
+          
+          <h2>Dirección de Envío</h2> 
+            <div class="form-group">
+              <label for="direccion">Dirección Postal (calle, nº de piso, CP):</label>
+              <input type="text" id="direccion" name="direccion">
+              <div class="error" id="direccionError"></div>
+            </div>
+            <div class="form-group">
+              <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                  <option value="">Seleccione un país</option>
+                  <option value="España">España</option>
+                  <option value="Portugal">Portugal</option>
+                    </select>
+                    <span class="error" id="paisError"></span>
+            </div>
+            <div class="form-group">
+              <label for="provincia">Provincia:</label>
+              <select id="provincia" name="provincia">
+                           <option value="">Seleccione una provincia</option>
+                            <option value="A Coruña">A Coruña</option>
+                            <option value="Álava">Álava</option>
+                            <option value="Albacete">Albacete</option>
+                            <option value="Alicante">Alicante</option>
+                            <option value="Almería">Almería</option>
+                            <option value="Asturias">Asturias</option>
+                            <option value="Ávila">Ávila</option>
+                            <option value="Badajoz">Badajoz</option>
+                            <option value="Baleares">Baleares</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Burgos">Burgos</option>
+                            <option value="Cáceres">Cáceres</option>
+                            <option value="Cádiz">Cádiz</option>
+                            <option value="Cantabria">Cantabria</option>
+                            <option value="Castellón">Castellón</option>
+                            <option value="Ciudad Real">Ciudad Real</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Cuenca">Cuenca</option>
+                            <option value="Girona">Girona</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Guadalajara">Guadalajara</option>
+                            <option value="Gipuzkoa">Gipuzkoa</option>
+                            <option value="Huelva">Huelva</option>
+                            <option value="Huesca">Huesca</option>
+                            <option value="Jaén">Jaén</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Las Palmas">Las Palmas</option>
+                            <option value="León">León</option>
+                            <option value="Lérida">Lérida</option>
+                            <option value="Lugo">Lugo</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Málaga">Málaga</option>
+                            <option value="Murcia">Murcia</option>
+                            <option value="Navarra">Navarra</option>
+                            <option value="Ourense">Ourense</option>
+                            <option value="Palencia">Palencia</option>
+                            <option value="Pontevedra">Pontevedra</option>
+                            <option value="Salamanca">Salamanca</option>
+                            <option value="Segovia">Segovia</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="Soria">Soria</option>
+                            <option value="Tarragona">Tarragona</option>
+                            <option value="Santa Cruz de Tenarife">Santa Cruz de Tenarife</option>
+                            <option value="Teruel">Teruel</option>
+                            <option value="Toledo">Toledo</option>
+                            <option value="Valencia">Valencia</option>
+                            <option value="Valladolid">Valladolid</option>
+                            <option value="Vizcaya">Vizcaya</option>
+                            <option value="Zamora">Zamora</option>
+                            <option value="Zaragoza">Zaragoza</option>
+              </select>
+              <span class="error" id="provinciaError"></span>
+            </div>
+            <div class="form-group">
+              <label for="ciudad">Ciudad:</label>
+              <input type="text" id="ciudad" name="ciudad">
+              <span class="error" id="ciudadError"></span>
+            </div>
+            <div class="form-group">
+              <label for="codigoPostal">Código Postal:</label>
+              <input type="text" id="codigoPostal" name="codigoPostal">
+              <span class="error" id="codigoPostalError"></span>
+            </div>
+            
+        </div>
+      
+        
+        <div class="col-lg-6">
+                    <h2>Extras</h2>
+                    <div class="extras">
+                        <label for="socio" class="etiqueta">Hazte Socio</label>
+                        <input type="checkbox" id="socio" class="cuadro" value="12"><span>12€</span>
+                    </div>
+                    <div class="extras">
+                        <label for="envios" class="etiqueta">Envíos gratis</label>
+                        <input type="checkbox" id="envios" class="cuadro" value="20"><span>20€(al año)</span>
+                    </div>
+                    <div class="extras">
+                        <label for="regalo" class="etiqueta">Envolver para regalo</label>
+                        <input type="checkbox" id="regalo" class="cuadro" value="6"><span>6€</span>
+                    </div> 
+                    <div class="extras">
+                        <label for="todos" class="etiqueta">Marcar todos los extras</label>
+                        <input type="checkbox" id="todos" class="cuadro1">
+                    </div> 
+
+                    <h2>Aplazamiento de pago</h2>
+                    <div>
+                        <label for="plazo">Plazo en meses:</label>
+                        <input type="number" id="plazo" min="0" max="12">
+                        <button type="button" class="btn btn-lg bg-primary-subtle" data-bs-toggle="popover"  data-bs-content="Si pagas ahora, pon 0 meses y tendrás 10% de descuento.
+                        Si quieres aplazar entre 1 y 6 meses, tendrás un descuento del 5%. Para aplazamientos mayores no dispondrás de nigún descuento">Sobre el aplazamiento</button>
+                        
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Resumen del Pedido
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body" id="mostarProductoFinal">
+                                  <div id="presupuestoItems"></div>
+                                  <span class="final">Total: <span id="presupuestoTotal">0.00</span> €</span>
+                                  <span class="error" id="pedidoError"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <p class=politica>
+                            <input type="checkbox" name="check" class="check" id="check">
+                            <label for="check">He leido y acepto la <a href="#">Política de Privacidad</a></label>
+                        </p>
+                        <div class="error" id="checkError"></div>
+                        <button type="submit" class="confirmar" id="confirmar">Confirmar pedido</button>
+                    </div>
+      
+      </div>
+    </form>
+  
+</section>
+    <!-- SECCIÓN 2 -->
+      <!-- Modal para pagar el pedido -->
+  
+  
+      <div id="modalPago" class="modal">
+        <div class="modal-content">
+            <span id="close">X</span>
+            <h2>Seleccione un método de pago</h2>
+            <button class="btn3" onclick="irAPagar('tarjeta')">Tarjeta de Crédito</button>
+            <button class="btn3" onclick="irAPagar('paypal')">PayPal</button>
+            <button class="btn3" onclick="irAPagar('transferencia')">Transferencia Bancaria</button>
+        </div>
+      </div>
+
+
+   
+ 
+     <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <!-- js -->
+  <script>
+    var popoverTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+  <script src="../JS/script.js"></script>
+  <script src="../JS/presupuesto.js"></script>
+</body>
+</html>

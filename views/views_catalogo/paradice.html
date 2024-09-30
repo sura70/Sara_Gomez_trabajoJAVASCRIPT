@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+     <!-- Meta datos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="juegos, juegos de mesa, ">
+    <link rel="canonical" href="htpps://www.homoludicus-huelva.com">
+    <meta name="robots" content="index,follow">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon">
+    <!--  CSS -->
+   <link rel="stylesheet" href="../../CSS/juegos.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- titulo -->
+    <title>Paradice</title>
+</head>
+<body>
+     <!-- barra de navegacion -->
+  <nav id="fix" class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Logo, nombre y enlaces de la nav -->
+      <div   class="collapse navbar-collapse"  id="navbar-toggler">
+        <a class="navbar-brand" href="../../index.html"><img id="foto" src="../../favicon.png"  alt="logo"></a>
+        <span class="nombre">Suerte Dada</span>
+        <i class="bi bi-dice-1-fill"></i>
+        <i class="bi bi-dice-6"></i>
+       
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../views/galeria.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../views/presupuesto.html">Pedido</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../views/contacto.html">Contacto</a>
+          </li>
+        </ul>
+         <!-- login y carrito de compra -->
+         <a href="#"><p class=" login bi bi-person-fill"></p></a>
+         <a href="#"><p id="carro" class="compras bi bi-cart-fill"><span id="cuentaCarrito">0</span></p></a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid envios">Envíos a domicilo gratis a partir de los 50€</div>
+
+    <!-- Modal del carrito -->
+  <div class="modals" id="cartModal">
+    <p class="totalPrice">Total del carrito: <span id="totalPrice">0</span>€</p>
+    <div class="modal-header">
+      <button class="btnComprar" id="nuevaCompra">Tramitar Pedido</button>
+      <span class="close-btn" id="closeModal">X</span>
+    </div>
+    <div id="cartItems"></div> <!-- Aquí se mostrarán los elementos del carrito -->
+    
+  </div>
+
+
+  <!-- seccion -->
+  <section class="container">
+    <div class="row mt-5">
+        <div class="col-lg-6 col-md-12"> 
+            <img class="cambio" src="../../assets/images/producto16.jpg" alt="juego paradice">
+        </div>
+        <div class="col-lg-6 col-md-12 producto" >
+            <h1 class="t">
+                Paradice
+            </h1>
+            <p  id="tachado" class="pa" data-bs-toggle="tooltip" data-bs-placement="top" title="OFERTAAAA!!!!!">Antes 29,30€</p>
+            <div class="pa">Ahora 25,99€</div>
+            <button id="btn1" class="boton2" data-nombre="Paradice" data-precio1="25.99"><i class="bi bi-cart-fill carro"></i>Añadir al carrito</button>
+            <p class="pa4"><b>Paradice</b>  es un juego de mesa que te traslada a la feria. ¡Su máquina dispensadora con 50 dados de colores es un espectáculo!
+
+                Completa las casetas de feria que elijas para conseguir bonus, tickets y otras sorpresas.<br>
+                <b>Paradice</b>es feria, Paradice es diversión, algodón de azúcar, bolsas sorpresa y patitos de goma. <br>
+                <b>Paradice</b>es la feria que siempre has soñado!
+            </p>
+                
+        </div>
+    </div>
+  </section>
+  <section class="container">
+    <h2>Información</h2>
+    <div class="row">
+        <div class="col-lg-4">
+            <p class="pa4">Filtrado por:</p>
+            <p class="pa4"><b>Familiares</b></p>
+        </div>
+        <div class="col-lg-4">
+            <p class="pa4">Núm.jugadores:</p>
+            <p class="pa4"><b>2,3,4</b></p>
+        </div>
+        <div class="col-lg-4">
+            <p class="pa4">Tiempo de juego:</p>
+            <p class="pa4"><b>30-45 minutos</b></p>
+        </div>
+    </div>
+    <table class="table table-striped table-hover mt-5">
+        <tbody>
+            <tr>
+                <td>Autor</td>
+                <td>Sergio Ortiz Ruiz</td>
+            </tr>
+            <tr>
+                <td>Mecánica</td>
+                <td>Tienta la suerte</td>
+            </tr>
+            <tr>
+                <td>Temática</td>
+                <td>Comercio, Urbano</td>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td>de 10 a 14 años, de 14 a 18 años, más de 18 años</td>
+            </tr>
+            <tr>
+                <td>Medidas</td>
+                <td>200 x 230 x 130 mm</td>
+            </tr>
+            <tr>
+                <td>Complejidad</td>
+                <td>Medio</td>
+            </tr>
+            <tr>
+                <td>Editorial</td>
+                <td>zacatrus</td>
+            </tr>
+            <tr>
+                <td>contenido</td>
+                <td>
+                    <ul>
+                        <li>55 Cartas</li>
+                        <li>50 Dados</li>
+                        <li>6 Tickets</li>
+                        <li>5 Tokens</li>
+                        <li>1 Bolsa</li>
+                        <li>1 Máquina dispensadora</li>
+                        <li>1 Track de puntuación</li>
+                        <li>1 Reglamento</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Idioma
+                </td>
+                <td>Español</td>
+            </tr>
+            <tr>
+                <td>Dependencia del idioma</td>
+                <td>Media</td>
+            </tr>
+        </tbody>
+        
+    </table>
+  </section>
+  <section class="container mt-5">
+    <div class="caj">
+        <h4 class="mt-5">Detalles</h4>
+        <p class="pa4">
+            En <b>Paradice</b>juego de mesa de Sergio Ortiz, tendrás que completar las casetas de feria con los dados que elijas en cada turno de la máquina dispensadora para acumular puntos.
+
+            <p class="pa4"><b>¿Cómo se juega a Paradice?</b></p>
+            <ul>
+                <li>Colocar la Máquina dispensadora con los 50 dados y las cartas de caseta en el centro de la mesa junto con el Almacén.</li>
+                <li>Se reparte una carta Caseta a cada persona y se empieza a jugar.</li>
+                <li>Por turnos se realiza una de estas acciones: elegir dados de la Máquina (por agrupación de color o número), elegir una carta Caseta del centro o realizar el movimiento Ruleta (deslizar los dados de la fila inferior para que caigan en la mesa y jugar con los resultados que salgan).</li>
+                <li>Se irán completando las casetas según las indicaciones que nos dé cada una de ellas (solo dados azules, números impares...).</li>
+                <li>Las casetas completadas otorgan poderes especiales que se pueden utilizar durante la partida (turno extra, volver a utilizar un poder...) y suben una posición su token en el Track de Puntuación (almacén).</li>
+                <li>Cuando dos Casetas llegan al final en el almacén se acaba la partida y se hace recuento de puntos (valor de las casetas, valor de los tickets, posición de los tockens en el Track...) y ganará quien más puntos haya conseguido en la feria.</li>
+            </ul>
+            Paradice es color y alegría. Paradice es diversión en la feria. ¡Paradice es tu feria!
+
+             <b>¡Os damos la bienvenida a Paradice!</b>
+
+ 
+ 
+        
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!-- JS -->
+ <script src="../../JS/galeria.js"></script>
+ <script src="../../JS/script.js"></script>
+</body>
+</html>

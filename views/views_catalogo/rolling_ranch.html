@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+     <!-- Meta datos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="juegos, juegos de mesa, ">
+    <link rel="canonical" href="htpps://www.homoludicus-huelva.com">
+    <meta name="robots" content="index,follow">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon">
+    <!--  CSS -->
+   <link rel="stylesheet" href="../../CSS/juegos.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- titulo -->
+    <title>Rolling Ranch</title>
+</head>
+<body>
+     <!-- barra de navegacion -->
+  <nav id="fix" class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Logo, nombre y enlaces de la nav -->
+      <div   class="collapse navbar-collapse"  id="navbar-toggler">
+        <a class="navbar-brand" href="../../index.html"><img id="foto" src="../../favicon.png"  alt="logo"></a>
+        <span class="nombre">Suerte Dada</span>
+        <i class="bi bi-dice-1-fill"></i>
+        <i class="bi bi-dice-6"></i>
+       
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../views/galeria.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../views/presupuesto.html">Pedido</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../views/contacto.html">Contacto</a>
+          </li>
+        </ul>
+         <!-- login y carrito de compra -->
+         <a href="#"><p class=" login bi bi-person-fill"></p></a>
+         <a href="#"><p id="carro" class="compras bi bi-cart-fill"><span id="cuentaCarrito">0</span></p></a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid envios">Envíos a domicilo gratis a partir de los 50€</div>
+
+    <!-- Modal del carrito -->
+  <div class="modals" id="cartModal">
+    <p class="totalPrice">Total del carrito: <span id="totalPrice">0</span>€</p>
+    <div class="modal-header">
+      <button class="btnComprar" id="nuevaCompra">Tramitar Pedido</button>
+      <span class="close-btn" id="closeModal">X</span>
+    </div>
+    <div id="cartItems"></div> <!-- Aquí se mostrarán los elementos del carrito -->
+    
+  </div>
+
+
+  <!-- seccion -->
+  <section class="container">
+    <div class="row mt-5">
+        <div class="col-lg-6 col-md-12"> 
+            <img class="cambio" src="../../assets/images/producto4.jpg" alt="juego draftosaurus">
+        </div>
+        <div class="col-lg-6 col-md-12 producto" >
+            <h1 class="t">
+                Rolling Ranch
+            </h1>
+            <!-- <p  id="tachado" class="pa" data-bs-toggle="tooltip" data-bs-placement="top" title="OFERTAAAA!!!!!">Antes 20,10€</p> -->
+            <div class="pa">19,50€</div>
+            <button id="btn1" class="boton2" data-nombre="Rolling Ranch" data-precio1="19.50"><i class="bi bi-cart-fill carro"></i>Añadir al carrito</button>
+            <p class="pa4"><b>Rolling Ranch</b> es un juego de mesa en el que tendrás que reconstruir tu rancho y recuperar a tus animales! ¿Serás quién lo haga mejor?</p>
+        </div>
+    </div>
+  </section>
+  <section class="container">
+    <h2>Información</h2>
+    <div class="row">
+        <div class="col-lg-4">
+            <p class="pa4">Filtrado por:</p>
+            <p class="pa4"><b>Familiares, Para 2, fiesta</b></p>
+        </div>
+        <div class="col-lg-4">
+            <p class="pa4">Núm.jugadores:</p>
+            <p class="pa4"><b>2,3,4,5,6,7,8,+8</b></p>
+        </div>
+        <div class="col-lg-4">
+            <p class="pa4">Tiempo de juego:</p>
+            <p class="pa4"><b>20 minutos</b></p>
+        </div>
+    </div>
+    <table class="table table-striped table-hover mt-5">
+        <tbody>
+            <tr>
+                <td>Autor</td>
+                <td>Jordy Adan</td>
+            </tr>
+            <tr>
+                <td>Mecánica</td>
+                <td>Roll&Write, Tienta la suerte</td>
+            </tr>
+           
+            <tr>
+                <td>Edad</td>
+                <td>de 10 a 14 años, de 14 a 18 años, más de 18 años</td>
+            </tr>
+            <tr>
+                <td>Medidas</td>
+                <td>115 x 165 x 40 mm</td>
+            </tr>
+            <tr>
+                <td>Complejidad</td>
+                <td>Medio</td>
+            </tr>
+            <tr>
+                <td>Editorial</td>
+                <td>TCG</td>
+            </tr>
+            <tr>
+                <td>contenido</td>
+                <td>
+                    <ul>
+                        <li>2 Dados de animales</li>
+                        <li>100 Fichas de rancho de doble cara</li>
+                        <li>4 Lapiceros</li>
+                        <li>20 Cartas de misión</li>
+                        <li>1 Reglamento</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Idioma
+                </td>
+                <td>Español</td>
+            </tr>
+            <tr>
+                <td>Dependencia del idioma</td>
+                <td>Nula (Sólo Instrucciones)</td>
+            </tr>
+        </tbody>
+        
+    </table>
+  </section>
+  <section class="container mt-5">
+    <div class="caj">
+        <h4 class="mt-5">Detalles</h4>
+        <p class="pa4">
+            <b>Rolling Ranch</b>Rolling Ranch Juego de mesa de estilo roll and write para divertirse toda la familia. Reconstruye tu rancho y recupera a tus animales para hacerte con la victoria.
+            
+
+ 
+        </p>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!-- JS -->
+ <script src="../../JS/galeria.js"></script>
+ <script src="../../JS/script.js"></script>
+</body>
+</html>

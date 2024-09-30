@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta datos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="juegos, juegos de mesa, ">
+  <link rel="canonical" href="htpps://www.homoludicus-huelva.com">
+  <meta name="robots" content="index,follow">
+  <!-- titulo -->
+  <title>Página dedicada a juegos de mesa</title>
+  <!-- favicon -->
+   <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  <!--  CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <!-- barra de navegacion -->
+  <nav id="fix" class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Logo, nombre y enlaces de la nav -->
+      <div   class="collapse navbar-collapse"  id="navbar-toggler">
+        <a class="navbar-brand" href="../index.html"><img id="foto" src="../favicon.png"  alt="logo"></a>
+        <span class="nombre">Suerte Dada</span>
+        <i class="bi bi-dice-1-fill"></i>
+        <i class="bi bi-dice-6"></i>
+       
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../views/presupuesto.html">Pedidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../views/contacto.html">Contacto</a>
+          </li>
+        </ul>
+         <!-- login y carrito de compra -->
+         <a href="#"><p class=" login bi bi-person-fill"></p></a>
+         <a href="#"><p id="carro" class="compras bi bi-cart-fill"><span id="cuentaCarrito">0</span></p></a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid envios">Envíos a domicilo gratis a partir de los 50€</div>
+
+  <!-- Modal del carrito -->
+    <div class="modals" id="cartModal">
+        
+        <p class="totalPrice"><span class="compras1 bi bi-cart-fill"></span>Total del carrito: <span class="totalPrice2" id="totalPrice">0</span>€</p><hr>
+        <div class="modal-header">
+        <button class="btnComprar" id="nuevaCompra">Tramitar Pedido</button>
+        <span class="close-btn" id="closeModal">X</span>
+        </div>
+        <div id="cartItems"></div> <!-- Aquí se mostrarán los elementos del carrito -->
+   </div>
+
+   <div class="container-fluid mt-5"></div>
+    <div class="row">
+        <!-- Barra lateral de filtros -->
+        <aside class="col-xl-3 col-lg-4  filtro-container">
+            <h2>Filtrar por:</h2>
+            <label>SI BUSCAS:</label>
+            <select id="filtro-buscar" class="form-control mb-3">
+                <option value="todas">Todas</option>
+                <option value="familiares">Familiares</option>
+                <option value="infantiles">Infantiles</option>
+                <option value="expertos">Expertos</option>
+                <option value="fiesta">Fiesta</option>
+                <option value="cooperativo">Cooperativo</option>
+                <option value="solitario">Solitario</option>
+                <option value="para2">Para 2</option>
+            </select>
+
+            <label>Categoría:</label>
+            <select id="filtro-categoria" class="form-control mb-3">
+                <option value="todas">Todas</option>
+                <option value="tablero">Juegos de tablero</option>
+                <option value="cartas">Juegos de cartas</option>
+                <option value="wargames">Wargames</option>
+                <option value="miniaturas">Juegos de miniaturas</option>
+                <option value="dados">Juegos de dados</option>
+            </select>
+
+            <label>Precio:</label>
+            <select id="filtro-precio" class="form-control">
+                <option value="todos">Todos</option>
+                <option value="bajo">Menos de $20</option>
+                <option value="medio">Entre $20 y $50</option>
+                <option value="alto">Más de $50</option>
+            </select>
+        </aside>
+
+        <!-- Contenido principal con productos -->
+        <main id="contenido" class="col-md-8">
+            <div class="row catalo" id="productosCata">
+                <div  class="col producto" data-buscar="familiares" data-precio="bajo" data-precio1="12.65" data-categoria="tablero" data-nombre="Draftosaurus">
+                    <a href="../views/views_catalogo/draftosaurus.html">
+                        <img src="../assets/images/producto4.jpg"  alt="Producto 1">
+                        <p class="pa3">Draftosaurus</p>
+                        <p class="pa3 tachado">Antes 20,10€</p>
+                        <div class="pa3">Ahora 12,65€</div>
+                    </a>
+                    <button class="boton2" data-precio1="12.65" data-nombre="Draftosaurus">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="familiares , fiesta" data-precio="bajo"  data-categoria="cartas" >
+                    <a href="../views/views_catalogo/el_portero_baldomero.html">
+                        <img src="../assets/images/producto5.jpg" alt="Producto 2">
+                        <p class="pa3">El portero Baldomero</p>
+                        <p class="pa3">12,65€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-nombre="EL portero Baldomero" data-precio1="12.65">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="expertos" data-precio="bajo"  data-categoria="familiar" >
+                    <a href="../views/views_catalogo/the_island.html">
+                        <img src="../assets/images/producto8.jpg" alt="Producto 3">
+                        <p class="pa3">The Island</p>
+                        <p class="pa3">15,00€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="15.00" data-nombre="The Island">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="fiesta" data-precio="bajo"  data-categoria="cartas" >
+                    <a href="../views/views_catalogo/cinco_torres.html">
+                        <img src="../assets/images/producto1.jpg" alt="Producto 4">
+                        <p class="pa3">5 Torres</p>
+                        <p class="pa3">9,50€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="9.50" data-nombre="5 Torres">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="solitario , para2 , cooperativo" data-precio="medio"  data-categoria="tablero" >
+                    <a href="../views/views_catalogo/arkeis.html">
+                        <img src="../assets/images/producto3.jpg" alt="Producto 5">
+                        <p class="pa3">Arkeis</p>
+                        <p class="pa3">9,00€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="9.00" data-nombre="Arkeis">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="solitario,para2,cooperativo" data-precio="alto"  data-categoria="cartas" >
+                    <a href="../views/views_catalogo/mision_cumplida.html">
+                        <img src="../assets/images/producto15.jpg" alt="Producto 6">
+                        <p class="pa3">Misión Cumplida</p>
+                        <p class="pa3">21,00</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-nombre="Misión Cumplida" data-precio1="21.00">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div class="col producto" data-buscar="familares" data-precio="medio"  data-categoria="cartas" >
+                    <a href="../views/views_catalogo/pelusas.html">
+                        <img src="../assets/images/producto17.jpg" alt="Producto 6">
+                        <p class="pa3">Pelusas</p>
+                        <p class="pa3">12,50€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="12.50" data-nombre="Pelusas">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="familiares, infantiles" data-precio="bajo"  data-categoria="tablero" >
+                    <a href="../views/views_catalogo/tinderblox.html">
+                        <img src="../assets/images/producto20.jpg" alt="Producto 6">
+                        <p class="pa3">Tinderblox</p>
+                        <p class="pa3">10,50€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="10.50" data-nombre="Tinderblox">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="expertos, para2," data-precio="alto"  data-categoria="tablero" >
+                    <a href="../views/views_catalogo/hive_pocket.html">
+                        <img src="../assets/images/producto6.jpg" alt="Producto 6">
+                        <p class="pa3">Hive Pocket</p>
+                        <p class="pa3 tachado">Antes 35,12€</p>
+                        <div class="pa3">Ahora 32,00€</div>
+                    </a>
+                    <button class="boton2" data-precio1="32.00" data-nombre="Hive Pocket">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="familiares" data-precio="alto"  data-categoria="tablero" >
+                    <a href="../views/views_catalogo/cities.html">
+                        <img src="../assets/images/producto10.jpg" alt="Producto 6">
+                        <p class="pa3">Cities</p>
+                        <p class="pa3">25,29€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="25,29" data-nombre="Cities">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="familiares" data-precio="alto"  data-categoria="tablero" >
+                    <a href="../views/views_catalogo/wyrmspan.html">
+                        <img src="../assets/images/producto21.jpg" alt="Producto 21">
+                        <p class="pa3">Wyrmspan</p>
+                        <p class="pa3">49,50€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="49.50" data-nombre="Wyrmspan">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="familiares,fiesta" data-precio="bajo"  data-categoria="cartas" >
+                    <a href="../views/views_catalogo/mal_trago.html">
+                        <img src="../assets/images/producto22.jpg" alt="Producto 22">
+                        <p class="pa3">Mal Trago</p>
+                        <p class="pa3">15,45€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="15.45" data-nombre="Mal Trago">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+            </div>
+            <div class="row" id="productosCata1" > 
+                <div  class="col producto" data-buscar="para2 " data-precio="bajo"  data-categoria="tablero" >
+                    <a href="../views/views_catalogo/siete_wonders.html">
+                        <img src="../assets/images/producto2.jpg" alt="Producto 1">
+                        <p class="pa3">7 Wonders</p>
+                        <p class="pa3 tachado">Antes 25,40€</p>
+                        <div class="pa3">Ahora 20,00€</div>
+                    </a>
+                    <button class="boton2" data-precio1="20.00" data-nombre="7 Wonders">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="infantiles,fiesta" data-precio="medio"  data-categoria="tablero" >
+                    <a href="../views/views_catalogo/listillo.html">
+                        <img src="../assets/images/producto14.jpg" alt="Producto 2">
+                        <p class="pa3">Listillo</p>
+                        <p class="pa3">12,65€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="12.65" data-nombre="Listillo">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="para2, fiesta" data-precio="medio"  data-categoria="cartas, dados" >
+                    <a href="../views/views_catalogo/isla_calavera.html">
+                        <img src="../assets/images/producto7.jpg" alt="Producto 3">
+                        <p class="pa3">Isla Calavera</p>
+                        <p class="pa3 tachado">Antes 30,00€</p>
+                        <div class="pa3">Ahora 27,99</div>
+                    </a>
+                    <button class="boton2" data-precio1="27.99" data-nombre="Isla Calavera">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="fiesta, familiares" data-precio="bajo"  data-categoria="cartas" >
+                    <a href="../views/views_catalogo/friegas_tu.html">
+                        <img src="../assets/images/producto11.jpg" alt="Producto 11">
+                        <p class="pa3">Friegas tú</p>
+                        <p class="pa3 tachado">Antes 9,50€</p>
+                        <div class="pa3">Ahora 8,99€</div>
+                        
+                    </a>
+                    <button class="boton2" data-precio1="8.99" data-nombre="Friegas tú">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="familiares, infantiles" data-precio="medio"  data-categoria="dados" >
+                    <a href="../views/views_catalogo/manchas.html">
+                        <img src="../assets/images/producto12.jpg" alt="Producto 5">
+                        <p class="pa3">Manchas</p>
+                        <p class="pa3">9,00€</p>
+                        <br>
+                        
+                    </a>
+                    <button class="boton2" data-precio1="9.00" data-nombre="Manchas">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="familiares, fiesta" data-precio="alto"  data-categoria="cartas" >
+                    <a href="../views/views_catalogo/virus.html">
+                        <img src="../assets/images/producto13.jpg" alt="Producto 6">
+                        <p class="pa3">Virus</p>
+                        <p class="pa3 tachado">Antes 14,99€</p>
+                        <div class="pa3">Ahora 12,99€</div>
+                    </a>
+                    <button class="boton2" data-precio1="12.99" data-nombre="Virus">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="expertos" data-precio="alto"  data-categoria="dados" >
+                    <a href="../views/views_catalogo/paradice.html">
+                        <img src="../assets/images/producto16.jpg" alt="Producto 6">
+                        <p class="pa3">Paradice</p>
+                        <p class="pa3 tachado">Antes 29,30€</p>
+                        <div class="pa3">Ahora 25,99€</div>
+                    </a>
+                    <button class="boton2" data-precio1="25.99" data-nombre="Paradice">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="expertos" data-precio="alto"  data-categoria="tablero" >
+                    <a href="../views/views_catalogo/ticket_to_ride.html">
+                        <img src="../assets/images/producto9.jpg" alt="Producto 9">
+                        <p class="pa3">Aventureros al tren Iberia</p>
+                        <p class="pa3">34,99€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="34.99" data-nombre="Aventureros al tren Iberia">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="familiares, fiesta" data-precio="alto" data-precio1="10.99" data-categoria="cartas" data-nombre="Pistas Cruzadas">
+                    <a href="../views/views_catalogo/pistas_cruzadas.html">
+                        <img src="../assets/images/producto18.jpg" alt="Producto 6">
+                        <p class="pa3">Pistas Cruzadas</p>
+                        <p class="pa3 tachado">Antes 12,50€</p>
+                        <div class="pa3">Ahora 10,99€</div>
+                    </a>
+                    <button class="boton2" data-precio1="10.99" data-nombre="Pistas Cruzadas">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="infantiles,dados" data-precio="alto"  data-categoria="dados" >
+                    <a href="../views/views_catalogo/rolling_ranch.html">
+                        <img src="../assets/images/producto19.jpg" alt="Producto 6">
+                        <p class="pa3">Rolling Ranch</p>
+                        <p class="pa3">19,50€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="19.50" data-nombre="Rolling Ranch">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="familiares" data-precio="bajo"  data-categoria="cartas" >
+                    <a href="../views/views_catalogo/dioses.html">
+                        <img src="../assets/images/producto23.jpg" alt="Producto 23">
+                        <p class="pa3">Dioses!</p>
+                        <p class="pa3">16,15€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="16.15" data-nombre="Dioses!">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div  class="col producto" data-buscar="familiares" data-precio="bajo"  data-categoria="cartas" >
+                    <a href="../views/views_catalogo/codex_naturalis.html">
+                        <img src="../assets/images/producto24.jpg" alt="Producto 24">
+                        <p class="pa3">Codex Naturalis</p>
+                        <p class="pa3">13,50€</p>
+                        <br>
+                    </a>
+                    <button class="boton2" data-precio1="13.50" data-nombre="Codex Naturalis">Añadir al carrito  <i class="bi bi-cart-fill"></i></button>
+                </div>
+            </div> 
+            
+        </main>
+    </div>
+    
+   
+  <!-- FOOTER -->
+    <footer>
+        <div class="row novedades bg-body-tertiary">
+            <div class="col">
+                <h1>Recibe las últimas novedades y ofertas</h1>
+                <form id="formu">
+                <label for="email1">Correo Eletrónico:</label>
+                <input type="text" id="email1" name="email"><button type="submit">Suscribirse</button><div class="error" id="email1Error"></div>
+                <p class=pa4>
+                    <input type="checkbox" name="check" class="check" id="check">
+                    <label for="check">He leido y acepto la <a href="#">Política de Privacidad</a></label>
+                </p>
+                <div class="error" id="checkError1"></div>
+                </form>
+            </div>
+        </div>
+        <div class="row contacto">
+            <div class="col uno">
+                <h6>Acerca de Suerte Dada</h6>
+                <button type="button" class="btn" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Quienes Somos" data-bs-content="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?">Quienes somos</button>
+                <button type="button" class="btn" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Gastos de envío" data-bs-content="Tipo de entrega
+  
+                Pedido	Península
+                (España)	Islas Baleares	Canarias, Ceuta y Melilla
+                A domicilio	Hasta 49,99 €	4,90 €	5,90 €	30,00 €
+                A domicilio	+ 50 €	Gratis	5,90 €	30,00 €
+                A domicilio	Incluye juego Zacatrus
+                de +7 €*	Gratis	5,90 €	30,00 €
+                Punto de recogida	Hasta 34,99 €	3,50 €	-	-
+                Punto de recogida	+ 35 €	Gratis	-	-
+                Punto de recogida	
+                Incluye juego Zacatrus
+                de +7 €*
+                Gratis	-	-
+                Recogida en tienda	Cualquier pedido	Gratis	-	-">Gastos de envío</button>
+                <button type=button class="btn" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Preguntas frecuentes" data-bs-content="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?">Preguntas frecuentes</button>
+        
+            </div>
+            <div class="col uno">
+                <h6>Contáctanos</h6>
+                <a href="../views/contacto.html#formularioContacto1" id="escribe">Escribenos</a>
+                <a href="../views/contacto.html#estamosAqui" id="aqui">Estamos aquí</a>
+            </div>
+            <div class="col">
+                <h6>Redes Sociales</h6>
+                <a href="#" class="bi bi-facebook icon"></a>
+                <a href="#" class="bi bi-instagram icon"></a> 
+                <a href="#" class="bi bi-youtube icon"></a> 
+                <a href="#" class="bi bi-twitter-x icon"></a> 
+            </div>
+        </div>
+    </footer>
+     <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <!-- js -->
+  <script>
+    var popoverTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+  <script src="../JS/script.js"></script>
+  <script src="../JS/galeria.js"></script>
+</body>
+</html>

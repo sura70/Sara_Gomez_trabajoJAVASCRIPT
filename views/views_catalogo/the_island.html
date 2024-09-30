@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 
+     <!-- Meta datos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="juegos, juegos de mesa, ">
+    <link rel="canonical" href="htpps://www.homoludicus-huelva.com">
+    <meta name="robots" content="index,follow">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon">
+    <!--  CSS -->
+   <link rel="stylesheet" href="../../CSS/juegos.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- titulo -->
+    <title>The Island</title>
+</head>
+<body>
+    <!-- barra de navegacion -->
+  <nav id="fix" class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Logo, nombre y enlaces de la nav -->
+      <div   class="collapse navbar-collapse"  id="navbar-toggler">
+        <a class="navbar-brand" href="../../index.html"><img id="foto" src="../../favicon.png"  alt="logo"></a>
+        <span class="nombre">Suerte Dada</span>
+        <i class="bi bi-dice-1-fill"></i>
+        <i class="bi bi-dice-6"></i>
+       
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../views/galeria.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../views/presupuesto.html">Pedido</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../views/contacto.html">Contacto</a>
+          </li>
+        </ul>
+         <!-- login y carrito de compra -->
+         <a href="#"><p class=" login bi bi-person-fill"></p></a>
+         <a href="#"><p id="carro" class="compras bi bi-cart-fill"><span id="cuentaCarrito">0</span></p></a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid envios">Envíos a domicilo gratis a partir de los 50€</div>
+
+
+    <!-- Modal del carrito -->
+  <div class="modals" id="cartModal">
+    <p class="totalPrice">Total del carrito: <span id="totalPrice">0</span>€</p>
+    <div class="modal-header">
+      <button class="btnComprar" id="nuevaCompra">Tramitar Pedido</button>
+      <span class="close-btn" id="closeModal">X</span>
+    </div>
+    <div id="cartItems"></div> <!-- Aquí se mostrarán los elementos del carrito -->
+    
+  </div>
+
+
+  <!-- seccion -->
+  <section class="container">
+    <div class="row mt-5" >
+        <div class="col-lg-6 col-md-12" > 
+            <img class="cambio" src="../../assets/images/producto8.jpg" alt="juego The Island">
+        </div>
+        <div class="col-lg-6 col-md-12 producto" >
+            <h1 class="t">
+                The Island
+            </h1>
+            <!-- <p  id="tachado" class="pa" data-bs-toggle="tooltip" data-bs-placement="top" title="OFERTAAAA!!!!!">Antes 20,10€</p> -->
+            <div class="pa"> 15,00€</div>
+            <button id="btn1" class="boton2" data-nombre="The Island" data-precio1="15.00"><i class="bi bi-cart-fill carro"></i>Añadir al carrito</button>
+            <p class="pa4"><b>The Island</b> es un juego de mesa, donde dirigirás a un grupo de exploradores en una isla llena de peligros y tesoros.
+
+                Otros grupos de exploradores también querrán salir de la isla en las barcas, así que habrá que estar alerta en cada turno y no perder de vista a nadie.</p>
+        </div>
+    </div>
+  </section>
+  <section class="container">
+    <h2>Información</h2>
+    <div class="row">
+        <div class="col-lg-4">
+            <p class="pa4">Filtrado por:</p>
+            <p class="pa4"><b>Familiares</b></p>
+        </div>
+        <div class="col-lg-4">
+            <p class="pa4">Núm.jugadores:</p>
+            <p class="pa4"><b>2,3,4</b></p>
+        </div>
+        <div class="col-lg-4">
+            <p class="pa4">Tiempo de juego:</p>
+            <p class="pa4"><b>45 minutos</b></p>
+        </div>
+    </div>
+    <table class="table table-striped table-hover mt-5">
+        <tbody>
+            <tr>
+                <td>Autor</td>
+                <td>Julian Courtland-Smith</td>
+            </tr>
+            <tr>
+                <td>Mecánica</td>
+                <td>Colocación de losetas</td>
+            </tr>
+            <tr>
+                <td>Temática</td>
+                <td>Naturaleza</td>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td>de 8 a 10 años, de 10 a 14 años, de 14 a 18 años</td>
+            </tr>
+            <tr>
+                <td>Editorial</td>
+                <td>Asmodée</td>
+            </tr>
+            <tr>
+                <td>contenido</td>
+                <td>
+                    <ul>
+                        <li>1 Tablero</li>
+                        <li>40 fichas de Terreno:</li>
+                        <li>16 de Playa</li>
+                        <li>16 de Bosque</li>
+                        <li>8 de Montaña</li>
+                        <li>40 Fichas de Explorador (10 de cada color)</li>
+                        <li>5 Fichas de Serpiente Marina</li>
+                        <li>6 Fichas de Tiburón</li>
+                        <li>5 Fichas de Ballenas</li>
+                        <li>12 Fichas de Barco</li>
+                        <li>1 Dado de Criaturas</li>
+                        <li>Instrucciones</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Idioma
+                </td>
+                <td>Español</td>
+            </tr>
+            
+        </tbody>
+        
+    </table>
+  </section>
+  <section class="container mt-5">
+    <div class="caj">
+        <h4 class="mt-5">Detalles</h4>
+        <p class="pa4">
+            <b>The Island</b>. En esta isla paradisíaca duerme un volcán y, justo cuando lo estáis explorando, la isla despierta de su letargo, no para de escupir lava y rocas de fuego.
+
+            Debes huir de allí con todo tu equipo, mientras la isla se hunde. En The Island el objetivo del juego es conseguir que tus Exploradores lleguen a tierra firme con la mayor cantidad de tesoros posible.
+
+            <p class="pa4"><b>¿Cómo se juega a The Island?</b></p>
+            <ul>
+                <li>Montar la isla y colocar las serpientes de mar donde corresponde y los exploradores y barcos según considere cada persona.</li>
+                <li> Por turnos se pueden mover exploradores, llevarlos a los barcos, mover barcos o activar alguna de las losetas de acción.</li>
+                <li> Las serpientes marinas atacan a los barcos y los exploradores se pierden, los tiburones se comen a los nadadores (que no estén embarcados) y la ballena tumba el barco y deja a los exploradores nadando.</li>
+                <li>Cuando se quita una ficha de terreno al acabar el turno, si hay algún explorador encima, se quedaría nadando.</li>
+                <li>El objetivo es llegar a la orilla con el mayor número de exploradores propios y obtener la mayor puntuación.
+                </li>
+            </ul>
+            ¡Sal de The Island con tus exploradores y gana la partida!
+
+ 
+        
+    </div>
+  </section>
+
+    <script src="../../JS/galeria.js"></script>
+    <script src="../../JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,721 @@
+/* Estilos generales de todas las páginas */
+/******************************************* BARRA DE NAVEGACIÓN ****************************************************/
+#fix{
+    width: 100%;
+    position:fixed;
+    z-index: 1500;
+}
+#foto{
+    width: 60px;
+    /* margin-left: 50px; */
+    margin: 20px;
+}
+.navbar{
+    padding: 2rem;
+    border:#f5f6f7;
+    
+    
+}
+.navbar-nav{
+    font-size: 20px;
+    margin-left:30px ;
+    margin-right: 30px;
+}
+.navbar-nav a:hover{
+    border-radius: 10px;
+    background-color: rgb(174, 174, 243);
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: center;
+}
+.nombre{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+   
+}
+.login{
+    font-size: 35px;
+    margin-top: 15px;
+    text-align: center;
+    margin: 5px;
+}
+.compras{
+    font-size: 35px;
+    margin-top: 15px;
+    margin-left: 5px;
+    text-align: center;
+    padding: 0;
+     
+}
+
+
+#cuentaCarrito{
+    font-size: 30px;
+    /* background-color: rgb(194, 214, 240); */
+    border-radius: 100%;
+    display: inline-block;
+    width: 30px;
+    aspect-ratio: 1;
+    text-align: center;
+}
+
+/********************************************* DIV que va solo, antes de la section *******************************************************/
+.envios{
+    padding-top: 125px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    background-color: black;
+}
+/****************************************** Modal ********************************************/
+.modals {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    top: 0;
+    right: 0;
+    width: 350px;
+    height:100%;
+    background-color: white;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1600;
+
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
+
+  .close-btn {
+    cursor: pointer;
+
+  }
+  .close-btn:hover{
+    color: red;
+  }
+h3{
+    text-decoration: underline;
+    margin: 15px;
+    padding:10px;
+}
+.contenidoModal{
+    display: flex;
+    width: 300px;
+    margin: 0 ;
+    padding: 5px;
+    font-size: 18px;
+}
+.pa6{
+    width: 250px;
+}
+.contenidoModal button{
+    
+    background-color: rgb(181, 213, 241);
+    height: 35px;
+    
+}
+
+
+.btnComprar{
+ 
+ width: 90%;
+ background-color:#1667b9;
+ color: white;
+ height: 50px;
+ font-size: 20px;
+ margin-bottom: 30px;
+}
+.btnComprar:hover{
+    background-color: #115599;
+}
+.compras1{
+    font-size:35px;
+    margin-right: 20px;
+    
+}
+
+/************************ESTILOS DEL FOOTER *******************************/
+footer{
+    margin-top: 100px; 
+    /* border-top: 1px solid grey; */
+    padding: 20px;
+}
+.novedades{
+    
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.novedades h1{
+    font-size: 35px;
+}
+.novedades button{
+    margin-left: 30px;
+    background-color: rgb(181, 213, 241);;
+}
+.novedades button:hover{
+    background-color:rgb(78, 155, 223) ;
+}
+.check{
+    margin-right: 20px;
+    width: 30px;
+}
+
+.pa4{
+    margin-top: 15px;
+}
+.contacto{
+    margin-top: 50px;
+    border-top: 1px solid grey;
+    padding: 15px;
+    text-align: center;
+
+}
+#email1{
+    width: 350px;
+}
+.contacto .uno{
+    border-right: 1px solid grey;
+    display:flex;
+    flex-direction: column;
+}
+.btn{
+    width: 200px;
+    margin: auto;
+    
+}
+.icon{
+    font-size: 25px;
+    margin: 15px;
+}
+.error {
+    color: red;
+    font-size: 14px;
+}
+/*************************ESTILOS DEL INDEX*****************************/
+
+/************************* SECCIÓN 1 *******************************************************/
+.bienvenida{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+
+  
+}
+.par{
+    font-size: 40px;
+    
+}
+
+.btn1{
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
+    background-color:rgb(150, 195, 235);
+}
+.btn1 a{
+    text-decoration: none;
+    color: white;
+}
+.btn1:hover{
+    transform: scale(1);
+    background-color: rgb(78, 155, 223);
+}
+.foto1:hover{
+    transform: scale(1);
+    border: 2px solid grey;
+}
+.b1 a{
+    color: rgb(70, 167, 206);
+}
+.b1 a{
+    text-decoration: none;
+}
+.b1 a:hover{
+    color: #1667b9;
+}
+/********************************* SECCIÓN 2  Y 4 ***************************************/
+#caja{
+    margin-top: 50px;
+}
+article h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    text-decoration: none;
+}
+.p2{
+    font-size: 16px;
+    text-align: center;
+}
+.card-title{
+    text-align: center;
+}
+ div a{
+    text-decoration: none;
+    color: black;
+}
+.imagen:hover{
+    transform: scale(1);
+    border: 2px solid grey;
+}
+.tachado{
+    text-decoration: line-through;
+}
+/************************************ SECCIÓN 3  ***************************************/
+.tit2{/* también lo usa el h2 de la section 4 */
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+#imagen1{
+    width: 300px;
+}
+#caja1{
+    width: 300px;
+    transition: 0.5s ease;
+}
+
+
+#imagen2{
+    width: 300px;
+   
+}
+#caja2{
+    width: 300px;
+    transition: 0.5s ease;
+}
+#imagen3{
+    width: 300px;
+}
+#caja3{
+    width: 300px;
+    transition:  0.5s ease;
+}
+#imagen4{
+    width: 300px;
+}
+#caja4{
+    width: 300px;
+    transition: 0.5s ease;
+}
+.rotar{
+    transform: rotate(360deg);
+}
+
+/******************************************* ESTILOS PÁGINA GALERÍA ********************************/
+ /* CONTENIDO */
+ .filtro-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    height: 100%;
+}
+.catalo{
+    transition: margin-left 0.3s ease;/* animación para el movimiento */
+}
+.content-move-left{
+    width: 1160px;
+
+}
+.content-move-left .boton2{
+    width: 150px;
+   
+}
+.content-move-left .novedades{
+   margin-left: 400px;
+}
+.content-move-left .contacto{
+    margin-left: 400px;
+}
+
+.producto {
+    
+   margin: 20px;
+}
+
+.producto img {
+    
+    width: 250px;
+    transition: 200ms;
+    
+}
+.pa3{
+    width: 200px;
+    font-size:17px;
+    text-align: center;
+    
+}
+.producto:hover{
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+    translate: 0 -10px;
+}
+.boton2{
+    background-color: rgb(181, 213, 241);
+    width: 250px;
+    margin-bottom: 10px;
+    transition: 200ms;
+}
+.boton2:hover{
+    background-color: #1667b9;
+    color: white;
+    border: 2px solid blue;
+    box-shadow: 0 3px 4px #1667b9;
+    translate: 0 -3px;
+}
+
+
+.oculto {
+    display: none;
+}
+.tachado{
+    text-decoration: line-through
+}
+div a{
+    text-decoration: none;
+    color: black;
+}
+
+/* *******************ESTILOS PÁGINA DE PRESUPUESTO ************************* */
+ /* Estilos del formulario */
+ 
+.contenidoPedido{
+    width: 100%;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+.contenidoPedido button{
+    margin: 5px;
+    background-color: rgb(181, 213, 241);
+    
+}
+form {
+    width: 90%;
+    margin: 0 auto ;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+.politica{
+    margin-top: 100px;
+    margin-left: 28%;
+}
+
+#mostrarProductoFinal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 200px;
+    width: 500px;
+}
+.confirmar{
+    width: 250px;
+    height: 100px;
+    margin-left:35%;
+    margin-top: 20px;
+    
+}
+#checkError{
+    margin-left: 35%;
+
+}
+.confirmar:hover{
+    background-color: rgb(50, 101, 196);
+    color: white;
+}
+/* Estilos del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn3{
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+.btn3:hover{
+    background-color: #45a049;
+
+}
+
+/* Formulario de extras */
+
+.extras{
+    display: flex;
+    margin: 10px;
+}
+.etiqueta{
+    width: 200px;
+}
+.cuadro{
+    width: 200px;
+}
+.cuadro1{
+    width: 200px;
+}
+.accordion{
+    margin-top: 25px;
+}
+.contenidoPedido{
+   display: flex;
+}
+.removebutton{
+    width: 150px;
+
+}
+.pa5{
+    width: 280px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+.final{
+    margin-top: 35px;
+    font-size: 25px;
+    text-align: center;
+}
+#presupuestoTotal{
+    padding-left:15px ;
+    font-size: 20px;
+}
+#plazo{
+    width: 30%;
+}
+
+/* ************************ESTILOS DE LA PÁGINA DE CONTACTO *************************** */
+
+/* Formulario principal de la página */
+#formularioContac {
+    width: 50%;
+    margin: 0 auto ;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+#textarea{
+    width: 100%;
+    height: 150px;
+}
+.enviar{
+    width: 150px;
+    margin-left: 40%;
+    background-color:rgb(181, 213, 241);
+}
+.enviar:hover{
+    background-color:rgb(78, 155, 223) ;
+}
+.form-group span{
+    color: red;
+    margin-left: 5px;
+}
+/* Mapa */
+.titContacto{
+    text-align: center;
+    margin-top: 15px
+}
+
+#map{
+    margin-top: 70px;
+    margin-left: 25%;
+    height: 600px;
+    width: 50%;
+   
+}
+
+/* medias queries para el index */
+@media screen and (max-width:1199px){
+    #imagen1{
+        width: 250px;
+    }
+    #caja1{
+        width: 250px;
+        transition: 0.5s ease;
+    }
+    
+    
+    #imagen2{
+        width: 250px;
+       
+    }
+    #caja2{
+        width: 250px;
+        transition: 0.5s ease;
+    }
+    #imagen3{
+        width: 250px;
+    }
+    #caja3{
+        width: 250px;
+        transition:  0.5s ease;
+    }
+    #imagen4{
+        width: 250px;
+    }
+    #caja4{
+        width: 250px;
+        transition: 0.5s ease;
+    }
+    .rotar{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width:991px){
+    .foto1{
+        margin-left: 250px;
+    }
+    .btn1{
+        margin-left: 270px;
+    }
+    #noPeque{
+        display: none;
+    }
+    
+
+}
+
+@media  screen and (max-width: 767px){
+        .envios{
+            display: none;
+            
+        }
+        .bienvenida{
+            display: none;
+        }
+        .foto1{
+            margin-left: 150px;
+        }
+        .btn1{
+            margin-left: 170px;
+        }
+        #fix{
+            margin-top: 0;
+            padding-top: 0;
+            position: sticky;
+        
+        }
+        
+}
+
+/* medias queries para la galería */
+
+@media screen and (max-width: 703px){
+    .pa3{
+       width:300px ; 
+       
+    }
+    .producto a{
+        width:300px ;
+        
+    }
+    .producto a img{
+        width:300px ;
+        
+    }
+    .boton2{
+        width:300px ;
+       
+    }
+} 
+@media screen and (max-width:1595px){
+    .content-move-left{
+        width:700px;
+    }
+}
+@media screen and (max-width:1200px){
+    .content-move-left{
+        width:600px;
+    }
+}

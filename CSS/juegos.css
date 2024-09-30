@@ -1,0 +1,191 @@
+/* estilos de las páginas de los juegos */
+/* Barra de navegación */
+#fix{
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+}
+
+#foto{
+    width: 60px;
+    /* margin-left: 50px; */
+    margin: 20px;
+}
+.navbar{
+    padding: 2rem;
+    border:#f5f6f7;
+    
+}
+.navbar-nav{
+    font-size: 20px;
+    margin-left:30px ;
+    margin-right: 30px;
+}
+.navbar-nav a:hover{
+    border-radius: 10px;
+    background-color: rgb(174, 174, 243);
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: center;
+}
+.nombre{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+   
+}
+.login{
+    font-size: 35px;
+    margin-top: 15px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+}
+.compras{
+    font-size: 35px;
+    margin-top: 15px;
+    margin-left: 5px;
+    text-align: center;
+    padding: 0;
+    color: black;
+     
+}
+
+
+#cuentaCarrito{
+    font-size: 30px;
+    /* background-color: rgb(194, 214, 240); */
+    border-radius: 100%;
+    display: inline-block;
+    width: 30px;
+    aspect-ratio: 1;
+    text-align: center;
+}
+
+/* div que va antes del modal */
+.envios{
+    padding-top: 125px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    background-color: black;
+}
+
+/* Modal */
+
+
+.modals {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    top: 0;
+    right: 0;
+    width: 350px;
+    height:100%;
+    background-color: white;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1600;
+
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
+
+  .close-btn {
+    cursor: pointer;
+
+  }
+  .close-btn:hover{
+    color: red;
+  }
+h3{
+    text-decoration: underline;
+    margin: 15px;
+    padding:10px;
+}
+.contenidoModal{
+    display: flex;
+    width: 300px;
+    margin: 0 ;
+    padding: 5px;
+    font-size: 18px;
+}
+.pa6{
+    width: 250px;
+}
+.contenidoModal button{
+    
+    background-color: rgb(181, 213, 241);
+    height: 35px;
+    
+}
+
+
+.btnComprar{
+ 
+ width: 90%;
+ background-color:#1667b9;
+ color: white;
+ height: 50px;
+ font-size: 20px;
+ margin-bottom: 30px;
+}
+.btnComprar:hover{
+    background-color: #115599;
+}
+.compras1{
+    font-size:35px;
+    margin-right: 20px;
+    
+}
+
+  /* Demás elementos */
+  .cambio{
+    width: 500px;
+  }
+.t{
+    margin: 30px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pa{
+    font-size: 30px;
+    margin: 0px 30px;
+    color: #1667b9;
+}
+.pa4{
+    margin-top: 50px;
+    font-size: 17px;
+}
+#btn1{
+    font-size: 30px;
+    margin: 30px;
+    padding: 20px;
+    background-color:rgb(181, 213, 241) ;
+}
+#btn1:hover{
+    background-color: #1667b9;
+    color: white;
+}
+.carro{
+    margin: 20px;
+}
+.caj{
+    border: 2px solid grey;
+}
+h4{
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#tachado{
+    text-decoration: line-through;
+}

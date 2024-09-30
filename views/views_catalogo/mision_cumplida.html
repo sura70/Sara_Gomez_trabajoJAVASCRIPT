@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+     <!-- Meta datos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="juegos, juegos de mesa, ">
+    <link rel="canonical" href="htpps://www.homoludicus-huelva.com">
+    <meta name="robots" content="index,follow">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon">
+    <!--  CSS -->
+   <link rel="stylesheet" href="../../CSS/juegos.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- titulo -->
+    <title>Misión Cumplida</title>
+</head>
+<body>
+     <!-- barra de navegacion -->
+  <nav id="fix" class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Logo, nombre y enlaces de la nav -->
+      <div   class="collapse navbar-collapse"  id="navbar-toggler">
+        <a class="navbar-brand" href="../../index.html"><img id="foto" src="../../favicon.png"  alt="logo"></a>
+        <span class="nombre">Suerte Dada</span>
+        <i class="bi bi-dice-1-fill"></i>
+        <i class="bi bi-dice-6"></i>
+       
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../views/galeria.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../views/presupuesto.html">Pedido</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../../views/contacto.html">Contacto</a>
+          </li>
+        </ul>
+         <!-- login y carrito de compra -->
+         <a href="#"><p class=" login bi bi-person-fill"></p></a>
+         <a href="#"><p id="carro" class="compras bi bi-cart-fill"><span id="cuentaCarrito">0</span></p></a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid envios">Envíos a domicilo gratis a partir de los 50€</div>
+
+    <!-- Modal del carrito -->
+  <div class="modals" id="cartModal">
+    <p class="totalPrice">Total del carrito: <span id="totalPrice">0</span>€</p>
+    <div class="modal-header">
+      <button class="btnComprar" id="nuevaCompra">Tramitar Pedido</button>
+      <span class="close-btn" id="closeModal">X</span>
+    </div>
+    <div id="cartItems"></div> <!-- Aquí se mostrarán los elementos del carrito -->
+    
+  </div>
+
+
+  <!-- seccion -->
+  <section class="container">
+    <div class="row mt-5">
+        <div class="col-lg-6 col-md-12"> 
+            <img class="cambio" src="../../assets/images/producto15.jpg" alt="juego mision cumplida">
+        </div>
+        <div class="col-lg-6 col-md-12 producto" >
+            <h1 class="t">
+                Misión Cumplida
+            </h1>
+            <!-- <p  id="tachado" class="pa" data-bs-toggle="tooltip" data-bs-placement="top" title="OFERTAAAA!!!!!">Antes 20,10€</p> -->
+            <div class="pa">21,00€</div>
+            <button id="btn1" class="boton2" data-nombre="Misión Cumplida" data-precio1="21.00"><i class="bi bi-cart-fill carro"></i>Añadir al carrito</button>
+            <p class="pa4"><b>Misión Cumplida</b> es un juego de cartas cooperativo en el que deberéis trabajar en equipo para cumplir el mayor número posible de retos. Juego muy divertido, familiar y para todas las edades. Empezad jugando al modo principiante y... seguro que llegáis pronto a superar el modo experto y ¡locura!
+
+                ¿Os atrevéis a jugar y ganar a Misión Cumplida?</p>
+        </div>
+    </div>
+  </section>
+  <section class="container">
+    <h2>Información</h2>
+    <div class="row">
+        <div class="col-lg-4">
+            <p class="pa4">Filtrado por:</p>
+            <p class="pa4"><b>Familiares, Para 2 , cooperativos</b></p>
+        </div>
+        <div class="col-lg-4">
+            <p class="pa4">Núm.jugadores:</p>
+            <p class="pa4"><b>1,2,3,4</b></p>
+        </div>
+        <div class="col-lg-4">
+            <p class="pa4">Tiempo de juego:</p>
+            <p class="pa4"><b>20 minutos</b></p>
+        </div>
+    </div>
+    <table class="table table-striped table-hover mt-5">
+        <tbody>
+            <tr>
+                <td>Autor</td>
+                <td>Ken Gruhl</td>
+            </tr>
+            <tr>
+                <td>Mecánica</td>
+                <td>Bazas, Gestión de cartas, Matemáticas</td>
+            </tr>
+            <tr>
+                <td>Temática</td>
+                <td>Abstracto</td>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td>de 10 a 14 años, de 14 a 18 años, más de 18 años</td>
+            </tr>
+            <tr>
+                <td>Medidas</td>
+                <td>110x150x30 mm</td>
+            </tr>
+            <tr>
+                <td>Complejidad</td>
+                <td>Medio</td>
+            </tr>
+            <tr>
+                <td>Editorial</td>
+                <td>zacatrus</td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Idioma
+                </td>
+                <td>Español</td>
+            </tr>
+            <tr>
+                <td>Dependencia del idioma</td>
+                <td>Poca</td>
+            </tr>
+        </tbody>
+        
+    </table>
+  </section>
+  <section class="container mt-5">
+    <div class="caj">
+        <h4 class="mt-5">Detalles</h4>
+        <p class="pa4">
+            En <b>Misión Cumplida</b>,vuestro objetivo será cumplir la mayor cantidad de retos posibles antes de que se os acaben las cartas. Cada partida se preparará con un máximo de objetivos y los jugadores, de forma cooperativa, deberán intentar cumplirlos con ciertas restricciones en la comunicación. Cumplid objetivos, aprended a comunicaros y... ¡no os quedéis sin cartas! Sólo así venceréis en este entretenido juego.
+
+            <p class="pa4"><b>¿Cómo se juega a Misión Cumplida?</b></p>
+            <ul>
+                <li>Se elige la Misión, según el grado de dificultad al que se quiera jugar, y se coloca el número correspondiente de cartas de Misión boca abajo y 4 de ellas boca arriba (serán las de inicio).</li>
+                <li> Barajamos las cartas de color. Repartimos 4 cartas a cada jugador y colocamos 4 cartas boca arriba debajo de las cartas de Misión</li>
+                <li> Por turnos, debemos colocar 1 carta de nuestra mano, encima de alguna de las cartas numeradas de color, respetando que sean de mismo color o número para cambiar el número o el color e intentar conseguir una o varias de las misiones.</li>
+                <li>Solo se puede hablar para decir, por ejemplo: 'No toquéis esta carta' 'Aquí me va bien a mi', pero en ningún caso podemos decir las cartas que tenemos.</li>
+                <li>Cada vez que completamos una misión, descartamos esa carta y colocamos una nueva del mazo. Colaborando, debemos cumplir todas las misiones y ganar en Misión Cumplida.</li>
+            </ul>
+            Juega en equipo, en pareja o en solitario. Misión Cumplida es un reto diferente en cada partida y ¡querrás jugar más de una partida!
+
+            Un juego cooperativo perfecto para llevar al aula y trabajar en equipo por un objetivo común.
+
+ 
+
+ 
+        
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!-- JS -->
+ <script src="../../JS/galeria.js"></script>
+ <script src="../../JS/script.js"></script>
+</body>
+</html>
